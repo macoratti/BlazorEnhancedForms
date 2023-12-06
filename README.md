@@ -15,9 +15,13 @@ Nos formulários HTML podemos adicionar o atributo data-enhance no formulario:
     <button>Procurar</button>
 </form>
 
-Recebendo valores via QeryString e via formulário
-Outro recurso disponível é que podemos receber o valor de parâmetros via querystring usando o atributo [SupplyParameterFromQuery] e também podemos obter valores do formulário usando  o atributo [SupplyParameterFromForm].
+**Recebendo valores via QeryString e via formulário**
+
+Outro recurso disponível é que podemos receber o valor de parâmetros via querystring usando o atributo [SupplyParameterFromQuery] e 
+também podemos obter valores do formulário usando  o atributo [SupplyParameterFromForm].
+
 Exemplo:
+
    <EditForm method="post" Model=“Test" OnValidSubmit=“Add" FormName="create" Enhance>
         //... 
   </EditForm>
@@ -30,6 +34,9 @@ Exemplo:
     public Product? Product { get; set; }
   ...
 }
+
 Neste exemplo:
-[SupplyParameterFromQuery] - Indica que o componente pode suprir o valor para o parâmetro da querystring da URL 
-[SupplyParameterFromForm] - Indica que o valor da propriedade será fornecida a partir do formulário de dados 
+
+**[SupplyParameterFromQuery]** - Indica que o componente pode suprir o valor para o parâmetro da querystring da URL 
+
+**[SupplyParameterFromForm]** - Indica que o valor da propriedade será fornecida a partir do formulário de dados 
